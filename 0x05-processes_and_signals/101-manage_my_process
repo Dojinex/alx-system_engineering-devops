@@ -1,34 +1,23 @@
 #!/usr/bin/env bash
-# Start/Stops/Restarts. Script to be used with manage_my_process
+# script that manages the "manage_my_process" script
 
-file="/var/run/my_process.pid"
-process_start()
-{
+if [ "${1}" == "start" ]
+then
 ./manage_my_process &
-echo "$!" > "$file"
-}
-
-process_stop()
-{
-kill "$(cat $file)"
-rm $file
-}
-
-case "$1" in
-start)
-process_start
-echo "manage_my_process started"
-;;
-stop)
-process_stop
+echo $! > /var/run/my_process.pid
+echo > "manage_my_process started"
+elif [ "${1}" == "stop" ]
+then
+kill "$(cat /var/run/my_process.pid)"
+sudo rm /var/run/my_process.pid
 echo "manage_my_process stopped"
-;;
-restart)
-process_stop
-process_start
+elif [ "${1}" == "restart" ]
+then
+kill "$(cat /var/run/my_process.pid)"
+sudo rm /var/run/my_process.pid
+./manage_my_process &
+echo $! > /var/run/my_process.pid
 echo "manage_my_process restarted"
-;;
-*)
+else
 echo "Usage: manage_my_process {start|stop|restart}"
-;;
-esac
+fi
