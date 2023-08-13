@@ -7,7 +7,7 @@
 + Duration: Start: August 10, 2023, 14:30 UTC | End: August 10, 2023, 16:45 UTC
 + Impact: Brace yourselves – the Gremlins invaded! Our beloved XYZ Web Service faced an unexpected hiccup, leaving users stranded in the digital desert. 100% of users did the frustrated F5 dance, thanks to the Gremlins' little prank.
 
-##TimeLine
+## TimeLine
 
 + 14:30 UTC: Alert bells started ringing like a demented doorbell salesman, marking the Gremlins' grand entrance.
 + 14:45 UTC: Our tech magicians rolled up their sleeves, ready to outwit the Gremlins and bring peace to the digital realm.
@@ -24,15 +24,17 @@
 
 ## Corrective And Preventative Measures
 
-# Improvements/Fixes:
+### Improvements/Fixes:
 
 + Network redundancy for a Gremlin-free future.
 + Monitoring on steroids – alert us before Gremlins even think of mischief.
 + Regular network checkups – no more sneaky switches slipping through the cracks.
 
-# Tasks to Address the Issue:
+### Tasks to Address the Issue:
 
 + Train Gremlin-sniffing dogs (not really, but it'd be cool).
 + Implement network redundancy like it's a Gremlin apocalypse survival kit.
 + Upgrade monitoring systems to Gremlin-level paranoia.
 + Conduct network configuration audits to keep switches in line.
+
+This unexpected downtime of the Web Service was a result of a misconfigured network switch, highlighting the importance of a well-designed and robust network architecture. The incident highlighted the need for continuous improvement in monitoring and alerting mechanisms to promptly detect and mitigate issues. Going forward, the implementation of the recommended measures will significantly enhance the service's stability and availability, ensuring a seamless experience for all users.
