@@ -1,6 +1,6 @@
 # Postmortem
 
-![Flogging a dead horse](post-mortem-meetings.jpg)
+![Hackers hacking](postmortem.jpg)
 
 ## Issue Summary
 
